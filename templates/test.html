@@ -1,0 +1,63 @@
+<html>
+<head>
+    <style>
+        /* h1 {
+            color: red;
+        } */
+        #head {
+            color: red;
+        }
+
+        #square {
+            background-color: pink;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var rows = 5;
+        for (var i=1; i<=rows; i++){
+            for (var j=1; j<=i; j++){
+                document.write("* ")
+            }
+            document.write("<br/>")
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="square">
+        <!-- <h1>Bello World HTML XD</h1> -->
+        <h1 id="head">Bello World HTML XD</h1>
+        <p id="name">Banana Banana !!</p>
+    </div>
+
+    <script type="text/javascript">
+        var rows = 4;
+        for (var i=0; i<=rows; i++){
+            var str = '';
+            for (var j=1; j<rows-i; j++){
+                str=str+'&nbsp';
+            }
+            for (var k=1; k<=(2*i+1); k++){
+                str = str + '*';
+            }
+            document.write(str);
+            document.write("<br/>");
+        }
+
+        document.getElementById("name").innerHTML = "My Banana ~~";
+        document.getElementById("name").style.color = "blue";
+    </script>
+
+    <form action="/", method='post'>
+        <input type="text" id="fname" name="username" value=""><br>
+        <input type="text" id="lname" name="email" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
